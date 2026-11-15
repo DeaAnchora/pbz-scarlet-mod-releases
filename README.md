@@ -1,12 +1,22 @@
 # 影境转生红莲大人，开局遇见理智孽奇拔
 
-影之刃零（PBZ）红莲角色与星刃适配 Mod 的完整安装包发布仓库。
+影之刃零（PBZ）红莲角色、星刃适配与迅驰模式的完整安装包发布仓库。
 
 ## 下载
 
 请到 [Releases](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases) 下载完整 ZIP。当前版本为 **[V11.0.9 测试版](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/tag/v11.0.9)**，持续战斗稳定性及最终视觉仍待实机验收。不要把测试版视为稳定版。
 
 GitHub 自动生成的 Source code ZIP/TAR 仅包含本仓库文档；安装 Mod 请下载 Release 附件中名称带 `v11.0.9.zip` 的完整包。
+
+## 迅驰模式（独立模块）
+
+**[迅驰模式 V9.0.9 完整测试版](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/tag/swift-v9.0.9)** · [下载完整 ZIP](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/download/swift-v9.0.9/PBZ-Swift-Mode-v9.0.9-full.zip) · [安装、快捷键与回退说明](docs/Swift-Mode-V9.0.9.md)
+
+迅驰是红莲角色的可选附加模块，需要先安装红莲主包；目前识别白旗袍和毛衣两套已审核外观。默认关闭，按 **F10** 或同时点按 **LB + RB** 切换。其它人物或服装不在当前适用范围。
+
+迅驰包独立提供全部模块资源、UE4SS运行文件及完整`Mod文件/UE4SS-FirstInstall/`，保持安装.cmd、卸载.cmd、快捷键设置.lua、说明.txt、Mod文件五项外层。安装/卸载均须先完全退出游戏，回执支持精确回退；不会默认并入红莲主包。
+
+本次发布保持当前迅驰23项模块内容原字节，仅整理完整安装、校验和回退。发布状态为测试版，离线验包与回退通过不代表所有实机场景已通过。下载Release附件，不要将GitHub自动生成的Source code归档当成安装包。
 
 ## 安装
 
@@ -47,6 +57,6 @@ e7149c429a243902ce707773d98994d60558faf0a93e046db17ccf632cced8af
 
 反馈请注明版本、武器、具体动作、是否经过过场，以及对应日志或崩溃时间。性能尖峰、其它武器复杂独立特效及最终视觉仍有待验证。
 
-本仓库专门存放发布说明；完整二进制安装包仅作为 Release 附件提供。包内 UE4SS 的原始许可证保留；伊芙语音与迅驰保持独立，不随本包重新分发。
+本仓库专门存放发布说明；完整二进制安装包仅作为 Release 附件提供。包内 UE4SS 的原始许可证保留；伊芙语音不随本项目重新分发；迅驰以独立Release提供，不随红莲主包默认安装。
 
 GitHub会规范化中文附件的底层下载文件名，页面上的附件显示名保留完整中文原名。如果下载得到 `-v11.0.9.zip`，请将它改名为 `影境转生红莲大人，开局遇见理智孽奇拔-v11.0.9.zip` 后再按校验文件核对；ZIP内部根目录、五项外层结构和文件内容不变，SHA256相同。
