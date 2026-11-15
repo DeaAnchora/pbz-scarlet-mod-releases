@@ -4,9 +4,9 @@
 
 ## 下载
 
-请到 [Releases](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases) 下载完整 ZIP。当前版本为 **[V11.0.9 测试版](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/tag/v11.0.9)**，持续战斗稳定性及最终视觉仍待实机验收。不要把测试版视为稳定版。
+请到 [Releases](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases) 下载完整 ZIP。当前红莲主包为 **[V11.1.3 测试版](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/tag/v11.1.3)**。黑伤LB+Y已获用户确认，新增LT独立特效适配仍待实测，其它武器技能及整体稳定性仍在修复与验收。
 
-GitHub 自动生成的 Source code ZIP/TAR 仅包含本仓库文档；安装 Mod 请下载 Release 附件中名称带 `v11.0.9.zip` 的完整包。
+GitHub 自动生成的 Source code ZIP/TAR 仅包含本仓库文档；安装 Mod 请下载 Release 附件中名称带 `v11.1.3.zip` 的完整包。
 
 ## 迅驰模式（独立模块）
 
@@ -35,24 +35,24 @@ GitHub 自动生成的 Source code ZIP/TAR 仅包含本仓库文档；安装 Mod
 
 完整 UE4SS 运行文件与原目录 `Mod文件/UE4SS-FirstInstall/` 已包含；FirstInstall 共8个文件。请保持整包结构。
 
-## V11.0.9 变化
+## V11.1.3 变化
 
-将动画工作线程的 chooser 回调放进独立 LuaMod，使其与星刃特效钩子在框架包装参数之前就使用独立 Lua 状态。保留原动画处理正文、V11.0.8 的破军刀光、黑伤 LB+Y 强化适配、收拔刀及有条件过场恢复。
+保留已验收的黑伤LB+Y强化，新增黑伤LT独立红黑BladeBuff特效的私有星刃坐标；原粒子、材质、时序和池化保持。保留11.1.2远跳转桥接、动画隔离及武器恢复，补充全武器逐技能排查。其它武器独立网格/挂点/组件材质分支尚未全部修复。
 
-本版隔离已确认的特效/工作线程动画钩子共享关系；实际新模块加载、持续战斗以及最终特效、过场恢复仍需实机测试。[版本说明](docs/V11.0.9.md)列出已验证范围。
+[V11.1.3版本说明](docs/V11.1.3.md)列出完整范围、验证及待测项；旧[V11.0.9说明](docs/V11.0.9.md)保留作历史记录。
 
 ## 精确回退
 
-运行“卸载.cmd”，或使用本次游戏目录 `ModBackups/ScarletV11009/` 回执备份内的“回退到安装前.cmd”。回退前同样须完全退出游戏。
+运行“卸载.cmd”，或使用本次游戏目录 `ModBackups/ScarletV11103/` 回执备份内的“回退到安装前.cmd”。回退前同样须完全退出游戏。
 
-从 V11.0.8 升级时，仅替换3个既有文件、新增4个独立动画模块文件，其余81项既有载荷不写。安装器在首个载荷写入前备份原始字节；独立回退脚本能在候选目录移走后恢复原3文件、移除新增4项。用户配置和共享框架保留。
+从11.1.2升级时核对93项基线、精确备份并替换3个既有文件、新增1项独立技能模块，其余90项路径保持。独立回退助手在候选目录移走后仍能恢复原3文件并移除新增项。支持完整首次安装；其它现有版本或未知手工修改会触发保护。
 
 ## 校验与反馈
 
 Release 同时提供 `SHA256SUMS.txt`。本版完整ZIP的SHA256：
 
 ```text
-e7149c429a243902ce707773d98994d60558faf0a93e046db17ccf632cced8af
+076bc168143cf5ca20efb41ba1ea9728d1597949aeb2caeb3cf40ce7d16c4add
 ```
 
 反馈请注明版本、武器、具体动作、是否经过过场，以及对应日志或崩溃时间。性能尖峰、其它武器复杂独立特效及最终视觉仍有待验证。
