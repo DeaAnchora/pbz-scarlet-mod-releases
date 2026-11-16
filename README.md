@@ -26,7 +26,7 @@
 
 1. 完全退出游戏。
 2. 解压完整ZIP，保持目录结构，不要只提取其中几个文件。
-3. 运行`安装.cmd`，按提示选择PBZ游戏根目录。
+3. 将解压后的完整Mod文件夹放入PBZ游戏根目录，与`platform`、`ProjectPBZ`文件夹同级，再运行Mod文件夹内的`安装.cmd`。
 4. 安装完成后再启动游戏。
 
 安装包结构如下：
@@ -58,6 +58,12 @@ V11.1.3支持首次安装，以及从受支持的V11.1.2安装升级。安装器
 **[迅驰模式V9.0.9测试版](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/tag/swift-v9.0.9)** · [下载完整ZIP](https://github.com/DeaAnchora/pbz-scarlet-mod-releases/releases/download/swift-v9.0.9/PBZ-Swift-Mode-v9.0.9-full.zip) · [安装与快捷键说明](docs/Swift-Mode-V9.0.9.md)
 
 迅驰是红莲角色的独立附加模块，需要先安装红莲主包。目前支持白旗袍和毛衣外观，默认关闭；按**F10**或同时点按**LB+RB**切换。它单独下载、安装，不会随主包默认启用。
+
+如需显式指定游戏目录，或使用PowerShell 7处理较长路径，请在包含`安装.cmd`的完整包文件夹中打开终端，执行下面的命令。示例路径请替换为自己的PBZ游戏根目录：
+
+```powershell
+pwsh -NoProfile -ExecutionPolicy Bypass -File ".\Mod文件\安装管理.ps1" -Action Install -GameRoot "D:\Games\PBZ"
+```
 
 ## 卸载与回退
 
